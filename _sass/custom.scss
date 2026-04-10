@@ -69,7 +69,9 @@ a:hover { color: #1a6bb5; }
 }
 
 .navbar {
-  height: var(--header-height);
+  min-height: var(--header-height);
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .navbar-brand {
@@ -81,13 +83,14 @@ a:hover { color: #1a6bb5; }
   display: flex;
   align-items: center;
   gap: 0.6rem;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
-.navbar-brand img {
-  max-height: var(--header-height);
-  max-width: clamp(130px, 20vh, 160px);
-  object-fit: contain;
-  padding: 0.5rem 0;
+.navbar-logo {
+  height: clamp(40px, 8vh, 70px);
+  width: auto;
+  display: block;
 }
 
 .brand-sub {
