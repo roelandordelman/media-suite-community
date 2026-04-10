@@ -1,0 +1,51 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="row py-5">
+      <div class="col-lg-5 mb-4 mb-lg-0">
+        <h5 class="footer-brand">Media Suite Community</h5>
+        <p class="footer-desc">
+          A hub for researchers, developers, and enthusiasts working with the CLARIAH Media Suite —
+          a digital humanities research infrastructure for audiovisual collections.
+        </p>
+        <div class="footer-social mt-3">
+          <a href="https://github.com/beeldengeluid/mediasuite-website" target="_blank" rel="noopener"
+            class="footer-social-link" aria-label="GitHub">
+            <i class="bi bi-github"></i> GitHub
+          </a>
+          <a href="{{ '/feed.xml' | relative_url }}" class="footer-social-link ms-3" aria-label="RSS Feed">
+            <i class="bi bi-rss"></i> RSS Feed
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-3 mb-4 mb-lg-0 offset-lg-1">
+        <h6 class="footer-heading">Quick Links</h6>
+        <ul class="footer-links list-unstyled">
+          <li><a href="{{ '/news/' | relative_url }}">News</a></li>
+          <li><a href="{{ '/events/' | relative_url }}">Events</a></li>
+          <li><a href="{{ '/community/' | relative_url }}">Community</a></li>
+          <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <h6 class="footer-heading">Resources</h6>
+        <ul class="footer-links list-unstyled">
+          <li><a href="https://mediasuite.clariah.nl/" target="_blank" rel="noopener">Media Suite</a></li>
+          <li><a href="https://mediasuite.clariah.nl/data-stories" target="_blank" rel="noopener">Data Stories</a></li>
+          <li><a href="https://mediasuite.clariah.nl/documentation" target="_blank" rel="noopener">Documentation</a></li>
+          <li><a href="https://clariah.nl/" target="_blank" rel="noopener">CLARIAH</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center py-3">
+        <p class="mb-0 footer-copy">&copy; {{ 'now' | date: "%Y" }} CLARIAH Media Suite Community</p>
+        <p class="mb-0 footer-copy-right">
+          Built with <a href="https://jekyllrb.com/" target="_blank" rel="noopener">Jekyll</a> &amp;
+          <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>

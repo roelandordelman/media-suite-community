@@ -1,0 +1,59 @@
+---
+layout: default
+title: News
+permalink: /news/
+---
+
+<div class="hero-strip">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+        <h1 class="hero-strip-title">News</h1>
+        <p class="hero-strip-subtitle">Announcements, updates, and articles from the Media Suite community.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+
+        {% if site.posts.size > 0 %}
+          {% for post in site.posts %}
+          <article class="post-card">
+            <div class="d-flex flex-wrap align-items-center gap-2 mb-2">
+              <span class="post-date">
+                <i class="bi bi-calendar3 me-1"></i>
+                {{ post.date | date: "%B %-d, %Y" }}
+              </span>
+              {% if post.author %}
+              <span class="post-date">
+                <i class="bi bi-person me-1"></i>{{ post.author }}
+              </span>
+              {% endif %}
+              {% for cat in post.categories %}
+              <span class="category-badge">{{ cat }}</span>
+              {% endfor %}
+            </div>
+            <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+            {% if post.excerpt %}
+            <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
+            {% endif %}
+            <a href="{{ post.url | relative_url }}" class="btn btn-sm btn-outline-primary mt-1">
+              Read more <i class="bi bi-arrow-right ms-1"></i>
+            </a>
+          </article>
+          {% endfor %}
+        {% else %}
+          <div class="text-center py-5">
+            <i class="bi bi-newspaper" style="font-size: 3rem; color: #dee2e6;"></i>
+            <p class="text-muted mt-3">No posts yet — check back soon!</p>
+          </div>
+        {% endif %}
+
+      </div>
+    </div>
+  </div>
+</section>

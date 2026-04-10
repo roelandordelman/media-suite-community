@@ -1,0 +1,110 @@
+---
+layout: default
+---
+
+<div class="hero-strip">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+        {%- if page.type -%}
+          <span class="event-type-badge mb-2 d-inline-block">
+            {%- if page.type == "online" -%}
+              <i class="bi bi-camera-video me-1"></i> Online
+            {%- elsif page.type == "in-person" -%}
+              <i class="bi bi-geo-alt me-1"></i> In Person
+            {%- elsif page.type == "hybrid" -%}
+              <i class="bi bi-display me-1"></i> Hybrid
+            {%- else -%}
+              {{ page.type }}
+            {%- endif -%}
+          </span>
+        {%- endif -%}
+        <h1 class="hero-strip-title">{{ page.title }}</h1>
+        <div class="event-meta-hero mt-2">
+          {%- if page.date -%}
+            <span class="me-3">
+              <i class="bi bi-calendar3 me-1"></i>
+              {{ page.date | date: "%B %-d, %Y" }}
+              {%- if page.end_date -%}
+                &ndash; {{ page.end_date | date: "%B %-d, %Y" }}
+              {%- endif -%}
+            </span>
+          {%- endif -%}
+          {%- if page.location -%}
+            <span>
+              <i class="bi bi-geo-alt me-1"></i>
+              {{ page.location }}
+            </span>
+          {%- endif -%}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+
+      {%- if page.description -%}
+        <div class="event-description-lead mb-4">
+          <p class="lead">{{ page.description }}</p>
+        </div>
+      {%- endif -%}
+
+      <div class="event-details-card mb-4">
+        <div class="row g-3">
+          {%- if page.date -%}
+            <div class="col-sm-6">
+              <div class="event-detail-item">
+                <span class="event-detail-label"><i class="bi bi-calendar3 me-2"></i>Date</span>
+                <span class="event-detail-value">
+                  {{ page.date | date: "%A, %B %-d, %Y" }}
+                  {%- if page.end_date -%}
+                    <br><small>until {{ page.end_date | date: "%A, %B %-d, %Y" }}</small>
+                  {%- endif -%}
+                </span>
+              </div>
+            </div>
+          {%- endif -%}
+          {%- if page.location -%}
+            <div class="col-sm-6">
+              <div class="event-detail-item">
+                <span class="event-detail-label"><i class="bi bi-geo-alt me-2"></i>Location</span>
+                <span class="event-detail-value">{{ page.location }}</span>
+              </div>
+            </div>
+          {%- endif -%}
+          {%- if page.type -%}
+            <div class="col-sm-6">
+              <div class="event-detail-item">
+                <span class="event-detail-label"><i class="bi bi-display me-2"></i>Format</span>
+                <span class="event-detail-value text-capitalize">{{ page.type }}</span>
+              </div>
+            </div>
+          {%- endif -%}
+        </div>
+      </div>
+
+      <div class="event-content">
+        {{ content }}
+      </div>
+
+      {%- if page.registration_url -%}
+        <div class="event-registration mt-4 p-4 rounded" style="background-color: #f9fcff; border-left: 4px solid #2e85d1;">
+          <h5>Register for this Event</h5>
+          <p class="mb-3">Secure your spot by registering through the link below.</p>
+          <a href="{{ page.registration_url }}" target="_blank" rel="noopener" class="btn btn-accent">
+            <i class="bi bi-box-arrow-up-right me-2"></i>Register Now
+          </a>
+        </div>
+      {%- endif -%}
+
+      <div class="mt-5 pt-4 border-top">
+        <a href="{{ '/events/' | relative_url }}" class="btn btn-outline-secondary">
+          <i class="bi bi-arrow-left me-1"></i> Back to Events
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

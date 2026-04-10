@@ -1,0 +1,494 @@
+// =============================================================================
+// Media Suite Community — custom.scss
+// =============================================================================
+
+// Variables
+$primary:     #2e85d1;
+$accent:      #f46041;
+$dark:        #2D343A;
+$footer-dark: #343a40;
+$light-bg:    #f9fcff;
+$gray:        #ededed;
+$near-black:  #07121e;
+
+// =============================================================================
+// Base
+// =============================================================================
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: $near-black;
+  background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Maven Pro', sans-serif;
+  font-weight: 500;
+}
+
+a { color: $primary; }
+a:hover { color: #1a6bb5; }
+
+// =============================================================================
+// Bootstrap overrides
+// =============================================================================
+.btn-primary {
+  background-color: $primary;
+  border-color: $primary;
+  &:hover, &:focus {
+    background-color: #1f6db5;
+    border-color: #1f6db5;
+  }
+}
+
+.btn-accent {
+  background-color: $accent;
+  border-color: $accent;
+  color: white;
+  &:hover, &:focus {
+    background-color: #d44a2b;
+    border-color: #d44a2b;
+    color: white;
+  }
+}
+
+.btn-outline-primary {
+  color: $primary;
+  border-color: $primary;
+  &:hover {
+    background-color: $primary;
+    border-color: $primary;
+    color: #fff;
+  }
+}
+
+// =============================================================================
+// Navbar
+// =============================================================================
+.navbar-brand {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff !important;
+  letter-spacing: -0.01em;
+}
+
+.brand-title {
+  color: #fff;
+}
+
+.brand-sub {
+  color: rgba(255, 255, 255, 0.65);
+  font-weight: 500;
+  margin-left: 0.25rem;
+}
+
+.navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.95rem;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+  transition: color 0.15s;
+
+  &:hover {
+    color: #fff !important;
+  }
+
+  &.active {
+    color: #fff !important;
+    border-bottom: 3px solid $primary;
+    font-weight: 600;
+  }
+}
+
+// =============================================================================
+// Hero strip (homepage)
+// =============================================================================
+.hero-strip {
+  background-color: $dark;
+  color: white;
+  padding: 5rem 0;
+
+  h1 {
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 700;
+    font-size: 2.6rem;
+  }
+
+  .lead {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.15rem;
+  }
+
+  .hero-badge {
+    display: inline-block;
+    background-color: rgba($primary, 0.25);
+    color: #a8d1f0;
+    border: 1px solid rgba($primary, 0.4);
+    border-radius: 2rem;
+    padding: 0.2rem 0.9rem;
+    font-size: 0.8rem;
+    font-family: 'Maven Pro', sans-serif;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+}
+
+// =============================================================================
+// Page hero (inner pages)
+// =============================================================================
+.hero-strip-title {
+  font-family: 'Maven Pro', sans-serif;
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: #fff;
+}
+
+.hero-strip-subtitle {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.1rem;
+}
+
+// =============================================================================
+// Post cards
+// =============================================================================
+.post-card {
+  border: 1px solid $gray;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  background: white;
+  transition: box-shadow 0.2s;
+
+  &:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.09);
+  }
+
+  h3 {
+    font-size: 1.15rem;
+    margin-bottom: 0.5rem;
+
+    a {
+      color: $near-black;
+      text-decoration: none;
+
+      &:hover { color: $primary; }
+    }
+  }
+}
+
+.post-date {
+  color: #6c757d;
+  font-size: 0.85rem;
+}
+
+.post-excerpt {
+  color: #495057;
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+}
+
+// =============================================================================
+// Category & event-type badges
+// =============================================================================
+.category-badge {
+  background-color: $primary;
+  color: white;
+  padding: 0.2em 0.65em;
+  border-radius: 0.3em;
+  font-size: 0.75rem;
+  font-family: 'Maven Pro', sans-serif;
+  text-transform: capitalize;
+}
+
+.badge-category {
+  background-color: rgba($primary, 0.12);
+  color: $primary;
+  border: 1px solid rgba($primary, 0.25);
+  padding: 0.25em 0.7em;
+  border-radius: 0.3em;
+  font-size: 0.78rem;
+  font-family: 'Maven Pro', sans-serif;
+  text-transform: capitalize;
+}
+
+.event-type-badge {
+  padding: 0.3em 0.75em;
+  border-radius: 0.3em;
+  font-size: 0.78rem;
+  font-family: 'Maven Pro', sans-serif;
+}
+
+.event-type-online   { background-color: #d4edda; color: #155724; }
+.event-type-in-person { background-color: #cce5ff; color: #004085; }
+.event-type-hybrid   { background-color: #fff3cd; color: #856404; }
+
+// =============================================================================
+// Event cards
+// =============================================================================
+.event-card {
+  border: 1px solid $gray;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  background: white;
+  transition: box-shadow 0.2s;
+
+  &:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.09);
+  }
+
+  h3 {
+    font-size: 1.15rem;
+    margin-bottom: 0.5rem;
+
+    a {
+      color: $near-black;
+      text-decoration: none;
+
+      &:hover { color: $primary; }
+    }
+  }
+}
+
+.event-date-label {
+  color: $primary;
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 0.35rem;
+}
+
+// =============================================================================
+// Event detail page
+// =============================================================================
+.event-details-card {
+  background: $light-bg;
+  border: 1px solid $gray;
+  border-radius: 0.5rem;
+  padding: 1.25rem 1.5rem;
+}
+
+.event-detail-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.event-detail-label {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #6c757d;
+  font-family: 'Maven Pro', sans-serif;
+  margin-bottom: 0.2rem;
+}
+
+.event-detail-value {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.event-meta-hero {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.95rem;
+}
+
+// =============================================================================
+// Post detail
+// =============================================================================
+.post-hero {
+  .post-title {
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #fff;
+  }
+
+  .post-meta {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+  }
+}
+
+.post-content {
+  font-size: 1.05rem;
+  line-height: 1.8;
+
+  h2, h3, h4 { margin-top: 2rem; }
+
+  p { margin-bottom: 1.2rem; }
+
+  blockquote {
+    border-left: 4px solid $primary;
+    padding-left: 1rem;
+    color: #6c757d;
+    font-style: italic;
+  }
+
+  code {
+    background-color: $light-bg;
+    border: 1px solid $gray;
+    border-radius: 0.25rem;
+    padding: 0.1em 0.4em;
+    font-size: 0.9em;
+  }
+
+  pre code {
+    background: none;
+    border: none;
+    padding: 0;
+  }
+
+  pre {
+    background-color: $dark;
+    color: #abb2bf;
+    border-radius: 0.4rem;
+    padding: 1.25rem;
+    overflow-x: auto;
+  }
+}
+
+// =============================================================================
+// Section headings
+// =============================================================================
+.section-title {
+  font-family: 'Maven Pro', sans-serif;
+  font-weight: 700;
+  color: $dark;
+  border-bottom: 3px solid $accent;
+  padding-bottom: 0.5rem;
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+
+// =============================================================================
+// Get Involved section
+// =============================================================================
+.get-involved {
+  background-color: $light-bg;
+  padding: 4.5rem 0;
+}
+
+.involve-card {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  border-radius: 0.5rem;
+  background: white;
+  border: 1px solid $gray;
+  height: 100%;
+  transition: box-shadow 0.2s;
+
+  &:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  }
+}
+
+.involve-icon {
+  font-size: 2.5rem;
+  color: $primary;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+// =============================================================================
+// Footer
+// =============================================================================
+.site-footer {
+  background-color: $footer-dark;
+  color: rgba(255, 255, 255, 0.72);
+
+  .footer-brand {
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: #fff;
+  }
+
+  .footer-desc {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .footer-heading {
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 0.75rem;
+  }
+
+  .footer-links {
+    li { margin-bottom: 0.4rem; }
+
+    a {
+      color: rgba(255, 255, 255, 0.72);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.15s;
+
+      &:hover { color: $accent; }
+    }
+  }
+
+  .footer-social-link {
+    color: rgba(255, 255, 255, 0.72);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.15s;
+
+    &:hover { color: $accent; }
+  }
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.2);
+
+  .footer-copy {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.82rem;
+  }
+
+  .footer-copy-right {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.82rem;
+
+    a {
+      color: rgba(255, 255, 255, 0.65);
+      text-decoration: none;
+
+      &:hover { color: $accent; }
+    }
+  }
+}
+
+// =============================================================================
+// Community page specifics
+// =============================================================================
+.community-card {
+  border: 1px solid $gray;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  height: 100%;
+  background: white;
+  transition: box-shadow 0.2s;
+
+  &:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
+
+  .community-card-icon {
+    font-size: 1.75rem;
+    color: $primary;
+    margin-bottom: 0.75rem;
+  }
+}
+
+// =============================================================================
+// Utility helpers
+// =============================================================================
+.text-accent { color: $accent !important; }
+.text-primary-custom { color: $primary !important; }
+.bg-light-custom { background-color: $light-bg !important; }
+.border-accent { border-color: $accent !important; }

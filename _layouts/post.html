@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+<article class="post-single">
+  <div class="post-hero py-5" style="background-color: #2D343A;">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          {%- if page.categories.size > 0 -%}
+            <div class="mb-2">
+              {%- for category in page.categories -%}
+                <span class="badge-category me-1">{{ category }}</span>
+              {%- endfor -%}
+            </div>
+          {%- endif -%}
+          <h1 class="post-title">{{ page.title }}</h1>
+          <div class="post-meta mt-2">
+            <span class="post-date">
+              <i class="bi bi-calendar3 me-1"></i>
+              {{ page.date | date: "%B %-d, %Y" }}
+            </span>
+            {%- if page.author -%}
+              <span class="post-author ms-3">
+                <i class="bi bi-person me-1"></i>
+                {{ page.author }}
+              </span>
+            {%- endif -%}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="post-content">
+          {{ content }}
+        </div>
+        <div class="post-footer mt-5 pt-4 border-top">
+          <a href="{{ '/news/' | relative_url }}" class="btn btn-outline-secondary">
+            <i class="bi bi-arrow-left me-1"></i> Back to News
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>

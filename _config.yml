@@ -1,0 +1,45 @@
+title: Media Suite Community
+description: A hub for researchers, developers, and enthusiasts around the CLARIAH Media Suite.
+baseurl: "/media-suite-community"
+url: "https://roelandordelman.github.io"  # update with your GitHub username
+
+# Build settings
+markdown: kramdown
+permalink: /news/:year/:month/:day/:title/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Collections
+collections:
+  events:
+    output: true
+    permalink: /events/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "events"
+    values:
+      layout: "event"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .gitignore
