@@ -68,10 +68,6 @@ a:hover { color: #1a6bb5; }
   --header-height: clamp(51px, 10vh, 100px);
 }
 
-body {
-  padding-top: var(--header-height);
-}
-
 .navbar {
   height: var(--header-height);
 }
