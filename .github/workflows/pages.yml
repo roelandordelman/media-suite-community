@@ -15,6 +15,9 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -31,8 +34,6 @@ jobs:
       - name: Set up GitHub Pages
         id: pages
         uses: actions/configure-pages@v5
-        env:
-          FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
       - name: Build Jekyll site
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
