@@ -1,8 +1,8 @@
 ---
 layout: event
 title: "Media Suite at BM Kennisfestival"
-date: 2026-05-15 10:00:00 +0200
-end_date: 2026-04-16 16:50:00
+date: 2026-04-16 13:00:00
+end_date: 2026-04-16 18:00:00
 location: "Beeld & Geluid"
 event_type: onsite
 registration_url: "https://bmkennisfestival.nl/tickets/"
