@@ -6,6 +6,7 @@ url: "https://roelandordelman.github.io"  # update with your GitHub username
 # Build settings
 markdown: kramdown
 permalink: /news/:year/:month/:day/:title/
+future: true  # publish future-dated events
 
 # Plugins
 plugins:
