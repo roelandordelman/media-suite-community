@@ -106,5 +106,5 @@ For general questions, email **mediastudies@clariah.nl**.
 
 ## Further reading
 
-- SURF SANE documentation — [TBD: link]
+- SURF SANE documentation — <https://www.surf.nl/en/themes/research-infrastructure/sane-secure-environment-for-analysing-sensitive-data/>
 - ODISSEI SANE page (for context on the shared SANE infrastructure used by the social sciences) — <https://odissei-data.nl/facility/secure-analysis-environment-sane/>
