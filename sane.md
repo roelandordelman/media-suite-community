@@ -98,15 +98,11 @@ We are not publishing cost or funding details yet while the service is in beta. 
 
 ## Request access or ask a question
 
-For all SANE-via-Media-Suite requests and questions, contact:
+<a href="{{ '/sane/request/' | relative_url }}" class="btn btn-primary btn-lg mb-3">
+  <i class="bi bi-file-earmark-text me-2"></i>Request SANE access
+</a>
 
-**mediastudies@clariah.nl**
-
-Please include:
-
-- a short description of your research and the NISV data you're interested in
-- your affiliation
-- a rough timeline for when you'd want to start
+For general questions, email **mediastudies@clariah.nl**.
 
 ## Further reading
 
