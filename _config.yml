@@ -19,6 +19,9 @@ collections:
   events:
     output: true
     permalink: /events/:name/
+  sane-collections:
+    output: true
+    permalink: /sane/collections/:name/
 
 # Defaults
 defaults:
@@ -37,6 +40,11 @@ defaults:
       type: "pages"
     values:
       layout: "page"
+  - scope:
+      path: ""
+      type: "sane-collections"
+    values:
+      layout: "sane-collection"
 
 # Exclude from build
 exclude:

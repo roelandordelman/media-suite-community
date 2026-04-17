@@ -74,7 +74,23 @@ Through the Media Suite, SANE access is currently scoped to **NISV collections**
 
 Besides building your own selection in the Media Suite, you can also request access to one of the default collections listed below. New default collections can be added by dropping an additional markdown file alongside this page.
 
+{% assign sane_items = site.sane-collections %}
+{% if sane_items.size > 0 %}
+  {% for item in sane_items %}
+  <div class="post-card mb-3">
+    <div class="d-flex flex-wrap gap-2 mb-2">
+      {% if item.type %}<span class="category-badge"><i class="bi bi-cpu me-1"></i>{{ item.type }}</span>{% endif %}
+      {% if item.language %}<span class="category-badge" style="background-color: #2D343A;"><i class="bi bi-translate me-1"></i>{{ item.language }}</span>{% endif %}
+      {% if item.status %}<span class="category-badge" style="background-color: #f46041;">{{ item.status }}</span>{% endif %}
+    </div>
+    <h3><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>
+    {% if item.description %}<p class="mb-1" style="font-size: 0.9rem;">{{ item.description }}</p>{% endif %}
+    {% if item.data_source %}<p class="text-muted mb-0" style="font-size: 0.8rem;"><i class="bi bi-database me-1"></i>{{ item.data_source }}</p>{% endif %}
+  </div>
+  {% endfor %}
+{% else %}
 *No default collections are published yet. Contact us at mediastudies@clariah.nl if you want to discuss a specific NISV collection for your research.*
+{% endif %}
 
 ## Costs
 
