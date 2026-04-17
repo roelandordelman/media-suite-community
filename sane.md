@@ -10,21 +10,28 @@ description: Researcher-facing landing page for SANE as offered via the Media Su
 
 ## What is SANE?
 
-SANE — the Secure Analysis Environment — is a hosted environment maintained by SURF that lets researchers analyse sensitive data without the data ever leaving the protected environment. It implements the Five Safes framework and is used by multiple Dutch research infrastructures.
+SANE — the Secure Analysis Environment — is a hosted environment maintained by SURF that lets researchers analyse sensitive data without the data ever leaving the protected environment. It implements the [Five Safes framework](https://en.wikipedia.org/wiki/Five_safes) and is used by multiple Dutch research infrastructures.
 
 For CLARIAH researchers, SANE makes it possible to work with NISV collections that cannot be downloaded or taken home: you bring your code and questions into the environment, the data stays inside.
 
 ## Who is this for?
 
-This page is aimed at researchers who want to analyse **NISV audiovisual data** that is not openly available. Through the Media Suite Community we can currently facilitate access to **NISV collections only**. For other CLARIAH collections, SANE is not yet a routed option — we'll update this page as that changes.
+This page is aimed at researchers who want to analyse **NISV audiovisual data** that is not openly available. Through the Media Suite we can currently facilitate access to **NISV collections only**. For other CLARIAH collections, SANE is not yet a routed option — we'll update this page as that changes.
 
 ## How it works: from selection to analysis
 
 The workflow combines two steps that may already be familiar (using the Media Suite to explore and select data) with SANE-specific steps to move that selection into a secure environment.
 
+<figure class="my-4 text-center">
+  <img src="{{ '/assets/img/sane-workflow.svg' | relative_url }}"
+       alt="Diagram of the six-step SANE via Media Suite workflow"
+       class="img-fluid" style="max-width: 560px;">
+  <figcaption class="text-muted mt-2" style="font-size: 0.875rem;">The six-step workflow from Media Suite selection to secure analysis in SANE.</figcaption>
+</figure>
+
 ### 1. Build your selection in the Media Suite
 
-Start in the **Media Suite**, where you can search, browse, and curate a selection of NISV items relevant to your research question. This is also where you document what you want to analyse and why — the selection and motivation feed directly into the access request.
+Start in the **Media Suite**, where you can search, browse, and curate a selection of NISV items relevant to your research question, and store your "personal dataset" in your [workspace](https://mediasuite.clariah.nl/workspace/projects). This is also where you document what you want to analyse and why — the selection and motivation feed directly into the access request.
 
 If you are new to the Media Suite, the [Community site](/community/) and its working groups are a good entry point.
 
@@ -63,9 +70,11 @@ At the end of the project we verify with you and with NISV that everything can b
 
 ## What you can analyse: NISV collections
 
-Through the Media Suite Community, SANE access is currently scoped to **NISV collections**. We can facilitate access to these because of our working relationship with Sound and Vision; we do not broker access to other collections via this route.
+Through the Media Suite, SANE access is currently scoped to **NISV collections**. We can facilitate access to these because of our working relationship with Sound and Vision; we do not broker access to other collections via this route.
 
-> [TBD: concrete list of NISV collections currently available for SANE analysis]
+Besides building your own selection in the Media Suite, you can also request access to one of the default collections listed below. New default collections can be added by dropping an additional markdown file alongside this page.
+
+*No default collections are published yet. Contact us at mediastudies@clariah.nl if you want to discuss a specific NISV collection for your research.*
 
 ## Costs
 
@@ -87,5 +96,3 @@ Please include:
 
 - SURF SANE documentation — [TBD: link]
 - ODISSEI SANE page (for context on the shared SANE infrastructure used by the social sciences) — <https://odissei-data.nl/facility/secure-analysis-environment-sane/>
-- Media Suite — [TBD: link]
-- NISV / Sound and Vision — [TBD: link]

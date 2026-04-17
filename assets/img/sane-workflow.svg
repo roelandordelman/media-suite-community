@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1180" width="900" height="1180" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#616161"/>
+    </marker>
+    <linearGradient id="jointFill" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#E3F2FD"/>
+      <stop offset="50%" stop-color="#E3F2FD"/>
+      <stop offset="50%" stop-color="#FFF3E0"/>
+      <stop offset="100%" stop-color="#FFF3E0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Title -->
+  <text x="450" y="36" font-size="20" font-weight="600" text-anchor="middle" fill="#212121">SANE via Media Suite — researcher workflow</text>
+
+  <!-- Legend -->
+  <g transform="translate(90, 60)">
+    <rect x="0" y="0" width="14" height="14" fill="#E3F2FD" stroke="#1565C0" stroke-width="1.5" rx="3"/>
+    <text x="22" y="12" font-size="12" fill="#424242">Researcher</text>
+    <rect x="150" y="0" width="14" height="14" fill="#FFF3E0" stroke="#E65100" stroke-width="1.5" rx="3"/>
+    <text x="172" y="12" font-size="12" fill="#424242">Media Suite broker</text>
+    <rect x="340" y="0" width="14" height="14" fill="url(#jointFill)" stroke="#546E7A" stroke-width="1.5" rx="3"/>
+    <text x="362" y="12" font-size="12" fill="#424242">Joint step</text>
+    <rect x="460" y="0" width="14" height="14" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.5" rx="3"/>
+    <text x="482" y="12" font-size="12" fill="#424242">SURF / SANE</text>
+  </g>
+
+  <!-- Step 1: Researcher -->
+  <g>
+    <rect x="300" y="105" width="300" height="80" fill="#E3F2FD" stroke="#1565C0" stroke-width="2" rx="8"/>
+    <text x="450" y="130" font-size="12" font-weight="600" text-anchor="middle" fill="#1565C0">STEP 1 · Researcher</text>
+    <text x="450" y="155" font-size="14" font-weight="500" text-anchor="middle" fill="#0D47A1">Research question needing</text>
+    <text x="450" y="173" font-size="14" font-weight="500" text-anchor="middle" fill="#0D47A1">NISV audiovisual data</text>
+  </g>
+
+  <!-- Arrow: step 1 to branch -->
+  <path d="M 450 185 L 450 215" stroke="#616161" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- Step 2: Branch (Option A / Option B) -->
+  <g>
+    <rect x="60" y="225" width="340" height="95" fill="#E3F2FD" stroke="#1565C0" stroke-width="2" rx="8"/>
+    <text x="230" y="250" font-size="12" font-weight="600" text-anchor="middle" fill="#1565C0">STEP 2A · Researcher</text>
+    <text x="230" y="275" font-size="14" font-weight="500" text-anchor="middle" fill="#0D47A1">Pick a predefined NISV dataset</text>
+    <text x="230" y="293" font-size="13" text-anchor="middle" fill="#1565C0">(listed on the SANE page)</text>
+
+    <rect x="500" y="225" width="340" height="95" fill="#E3F2FD" stroke="#1565C0" stroke-width="2" rx="8"/>
+    <text x="670" y="250" font-size="12" font-weight="600" text-anchor="middle" fill="#1565C0">STEP 2B · Researcher</text>
+    <text x="670" y="275" font-size="14" font-weight="500" text-anchor="middle" fill="#0D47A1">Build a custom selection in</text>
+    <text x="670" y="293" font-size="14" font-weight="500" text-anchor="middle" fill="#0D47A1">Media Suite search</text>
+  </g>
+
+  <!-- Branch arrows from step 1 to 2A/2B -->
+  <path d="M 450 215 Q 450 225 400 235 L 350 260" stroke="none" fill="none"/>
+  <path d="M 370 215 L 280 225" stroke="#616161" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 530 215 L 620 225" stroke="#616161" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- Merge arrows from 2A/2B to step 3 -->
+  <path d="M 280 320 L 400 355" stroke="#616161" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 620 320 L 500 355" stroke="#616161" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- Step 3: Expression of interest -->
+  <g>
+    <rect x="300" y="360" width="300" height="80" fill="#E3F2FD" stroke="#1565C0" stroke-width="2" rx="8"/>
+    <text x="450" y="385" font-size="12" font-weight="600" text-anchor="middle" fill="#1565C0">STEP 3 · Researcher</text>
+    <text x="450" y="410" font-size="14" font-weight="500" text-anchor="middle" fill="#0D47A1">Submit expression of interest</text>
+    <text x="450" y="428" font-size="14" font-weight="500" text-anchor="middle" fill="#0D47A1">to Media Suite broker</text>
+  </g>
+
+  <path d="M 450 440 L 450 470" stroke="#616161" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- Step 4: Eligibility check -->
+  <g>
+    <rect x="300" y="480" width="300" height="80" fill="#FFF3E0" stroke="#E65100" stroke-width="2" rx="8"/>
+    <text x="450" y="505" font-size="12" font-weight="600" text-anchor="middle" fill="#E65100">STEP 4 · Media Suite broker</text>
+    <text x="450" y="530" font-size="14" font-weight="500" text-anchor="middle" fill="#BF360C">Eligibility check &amp;</text>
+    <text x="450" y="548" font-size="14" font-weight="500" text-anchor="middle" fill="#BF360C">confirm request is in progress</text>
+  </g>
+
+  <path d="M 450 560 L 450 590" stroke="#616161" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- Step 5: Request SANE environment (joint: researcher + broker) -->
+  <g>
+    <rect x="300" y="600" width="300" height="80" fill="url(#jointFill)" stroke="#546E7A" stroke-width="2" rx="8"/>
+    <!-- subtle divider to reinforce the joint action -->
+    <line x1="450" y1="605" x2="450" y2="675" stroke="#B0BEC5" stroke-width="1" stroke-dasharray="2 3"/>
+    <text x="375" y="625" font-size="12" font-weight="600" text-anchor="middle" fill="#1565C0">Researcher</text>
+    <text x="525" y="625" font-size="12" font-weight="600" text-anchor="middle" fill="#E65100">+ broker</text>
+    <text x="450" y="650" font-size="14" font-weight="500" text-anchor="middle" fill="#37474F">Request SANE environment</text>
+    <text x="450" y="668" font-size="14" font-weight="500" text-anchor="middle" fill="#37474F">setup at SURF (together)</text>
+  </g>
+
+  <path d="M 450 680 L 450 710" stroke="#616161" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- Step 6: Data added to SANE -->
+  <g>
+    <rect x="300" y="720" width="300" height="80" fill="#FFF3E0" stroke="#E65100" stroke-width="2" rx="8"/>
+    <text x="450" y="745" font-size="12" font-weight="600" text-anchor="middle" fill="#E65100">STEP 6 · Media Suite broker</text>
+    <text x="450" y="770" font-size="14" font-weight="500" text-anchor="middle" fill="#BF360C">Selected NISV data is added</text>
+    <text x="450" y="788" font-size="14" font-weight="500" text-anchor="middle" fill="#BF360C">to the SANE environment</text>
+  </g>
+
+  <path d="M 450 800 L 450 830" stroke="#616161" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- Step 7: Analysis -->
+  <g>
+    <rect x="300" y="840" width="300" height="80" fill="#E3F2FD" stroke="#1565C0" stroke-width="2" rx="8"/>
+    <text x="450" y="865" font-size="12" font-weight="600" text-anchor="middle" fill="#1565C0">STEP 7 · Researcher</text>
+    <text x="450" y="890" font-size="14" font-weight="500" text-anchor="middle" fill="#0D47A1">Analyse NISV data inside SANE</text>
+    <text x="450" y="908" font-size="13" text-anchor="middle" fill="#1565C0">(data stays in the environment)</text>
+  </g>
+
+  <path d="M 450 920 L 450 950" stroke="#616161" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- Step 8: Close out -->
+  <g>
+    <rect x="300" y="960" width="300" height="95" fill="#FFF3E0" stroke="#E65100" stroke-width="2" rx="8"/>
+    <text x="450" y="985" font-size="12" font-weight="600" text-anchor="middle" fill="#E65100">STEP 8 · Media Suite broker</text>
+    <text x="450" y="1010" font-size="14" font-weight="500" text-anchor="middle" fill="#BF360C">Environment removed;</text>
+    <text x="450" y="1028" font-size="14" font-weight="500" text-anchor="middle" fill="#BF360C">analysis results (e.g. visualisations)</text>
+    <text x="450" y="1046" font-size="14" font-weight="500" text-anchor="middle" fill="#BF360C">handed back to researcher</text>
+  </g>
+
+  <!-- SURF context bracket (visual cue that steps 5-6 involve SURF) -->
+  <g opacity="0.9">
+    <rect x="620" y="600" width="200" height="200" fill="#E8F5E9" stroke="#2E7D32" stroke-width="1.5" stroke-dasharray="4 3" rx="8"/>
+    <text x="720" y="625" font-size="12" font-weight="600" text-anchor="middle" fill="#2E7D32">SURF / SANE</text>
+    <text x="720" y="650" font-size="12" text-anchor="middle" fill="#2E7D32">Environment is</text>
+    <text x="720" y="666" font-size="12" text-anchor="middle" fill="#2E7D32">created, populated</text>
+    <text x="720" y="682" font-size="12" text-anchor="middle" fill="#2E7D32">with data, and hosts</text>
+    <text x="720" y="698" font-size="12" text-anchor="middle" fill="#2E7D32">the analysis in</text>
+    <text x="720" y="714" font-size="12" text-anchor="middle" fill="#2E7D32">steps 5–7</text>
+  </g>
+  <path d="M 600 640 L 620 640" stroke="#2E7D32" stroke-width="1.5" stroke-dasharray="4 3" fill="none"/>
+  <path d="M 600 760 L 620 760" stroke="#2E7D32" stroke-width="1.5" stroke-dasharray="4 3" fill="none"/>
+  <path d="M 600 880 L 620 880" stroke="#2E7D32" stroke-width="1.5" stroke-dasharray="4 3" fill="none"/>
+
+  <!-- Footer -->
+  <text x="450" y="1100" font-size="11" text-anchor="middle" fill="#757575">Scope: SANE via Media Suite — NISV collections only · Contact: mediastudies@clariah.nl</text>
+</svg>
