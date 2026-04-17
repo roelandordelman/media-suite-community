@@ -29,9 +29,9 @@ The workflow combines two steps that may already be familiar (using the Media Su
   <figcaption class="text-muted mt-2" style="font-size: 0.875rem;">The six-step workflow from Media Suite selection to secure analysis in SANE.</figcaption>
 </figure>
 
-### 1. Build your selection in the Media Suite
+### 1. Select a data set or build one in the Media Suite
 
-Start in the **Media Suite**, where you can search, browse, and curate a selection of NISV items relevant to your research question, and store your "personal dataset" in your [workspace](https://mediasuite.clariah.nl/workspace/projects). This is also where you document what you want to analyse and why — the selection and motivation feed directly into the access request.
+Either select a data set that has already been prepared (see below: "What you can analyse") or start in the **Media Suite**, where you can search, browse, and curate a selection of NISV items relevant to your research question, and store your "personal dataset" in your [workspace](https://mediasuite.clariah.nl/workspace/projects). This is also where you document what you want to analyse and why — the selection and motivation feed directly into the access request.
 
 If you are new to the Media Suite, the [Community site](/community/) and its working groups are a good entry point.
 
