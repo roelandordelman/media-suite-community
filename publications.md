@@ -2,38 +2,57 @@
 layout: page
 title: Publications
 permalink: /publications/
-description: Academic publications related to CLARIAH Media Suite, sourced from the Media Studies CLARIAH WP5 Zotero group library and a harvested community list.
+description: Academic publications related to CLARIAH Media Suite, from the Media Studies CLARIAH WP5 Zotero group and a harvested community list.
 ---
 
 <p class="lead mb-4">
-  Publications related to the CLARIAH Media Suite from two sources: the
-  <a href="https://www.zotero.org/groups/2288915/media_studies_clariah_wp5" target="_blank" rel="noopener">Media Studies CLARIAH WP5 Zotero group</a>
-  (added directly by researchers — the single source of truth) and a harvested list compiled by the Media Suite team.
-  If a harvested entry already appears in Zotero it is suppressed automatically.
-  See the <a href="{{ site.baseurl }}/about/#publications-procedure">procedure notes</a> below, or read the full
-  <a href="https://github.com/roelandordelman/media-suite-community/blob/main/README.md#publications-page" target="_blank" rel="noopener">README</a>.
+  Publications related to the CLARIAH Media Suite from two sources:
+  the <a href="https://www.zotero.org/groups/2288915/media_studies_clariah_wp5" target="_blank" rel="noopener">Media Studies CLARIAH WP5 Zotero group</a>
+  (added directly by researchers — single source of truth) and a harvested list compiled by the Media Suite team.
+  See the <a href="#publications-procedure">procedure notes</a> below.
 </p>
 
-<h2 class="section-title" style="font-size:1.3rem;">Researcher-added &mdash; Zotero</h2>
-<p class="text-muted mb-3" style="font-size:0.9rem;">
-  These publications were added to the Zotero group directly by researchers.
-  To contribute, <a href="https://www.zotero.org/groups/2288915/media_studies_clariah_wp5" target="_blank" rel="noopener">join the Zotero group</a> and add your paper there.
-</p>
-
-<div id="bibbase-container">
-  <script src="https://bibbase.org/show?bib=https%3A%2F%2Fapi.zotero.org%2Fgroups%2F2288915%2Fitems%2Ftop%3Fformat%3Dbibtex%26limit%3D100%26v%3D1&jsonp=1&theme=default&authorFirst=1&folding=1&hidemenu=1"></script>
-</div>
+<div id="pub-status" class="text-muted mb-3"><small>Loading publications…</small></div>
+<div id="publications-list"></div>
 
 <style>
-  /* Blend BibBase into the site */
-  #bibbase-container a { color: #2e85d1; }
-  #bibbase-container a:hover { color: #1a6bb5; }
-  .bibbase_paper_title { font-family: 'Maven Pro', sans-serif; font-weight: 500; }
-  .bibbase_year_heading { font-family: 'Maven Pro', sans-serif; color: #2D343A;
-    border-bottom: 3px solid #f46041; padding-bottom: 0.3rem; margin-top: 2rem; }
+  .pub-year-heading {
+    font-family: 'Maven Pro', sans-serif;
+    color: #2D343A;
+    border-bottom: 3px solid #f46041;
+    padding-bottom: 0.3rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1.25rem;
+    font-size: 1.35rem;
+    font-weight: 700;
+  }
 
-  /* Zotero provenance badge (injected by JS into each BibBase entry) */
-  .zotero-badge {
+  .pub-entry {
+    padding: 0.6rem 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .pub-entry:last-child { border-bottom: none; }
+
+  .pub-title {
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 500;
+    font-size: 0.97rem;
+    line-height: 1.4;
+  }
+  .pub-title a { color: #07121e; text-decoration: none; }
+  .pub-title a:hover { color: #2e85d1; }
+
+  .pub-meta {
+    font-size: 0.82rem;
+    color: #6c757d;
+    margin-top: 0.15rem;
+  }
+  .pub-meta a { color: #6c757d; }
+  .pub-meta a:hover { color: #2e85d1; }
+
+  .pub-badges { margin-top: 0.3rem; }
+
+  .badge-zotero {
     display: inline-block;
     background: rgba(39, 140, 72, 0.1);
     color: #1a6b38;
@@ -44,108 +63,36 @@ description: Academic publications related to CLARIAH Media Suite, sourced from 
     font-family: 'Maven Pro', sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.04em;
-    vertical-align: middle;
-    margin-left: 0.4em;
-    white-space: nowrap;
+    margin-right: 0.3em;
   }
 
-  /* Community-reported section */
-  #community-publications { border-top: 2px solid #ededed; padding-top: 2.5rem; }
-
-  .community-pub-card {
-    background: #fdf8f5;
-    border: 1px solid #f0e0d4;
-    border-left: 4px solid #f46041;
-    border-radius: 0.45rem;
-    padding: 1rem 1.25rem;
-    margin-bottom: 1rem;
-  }
-
-  .community-pub-title {
-    font-family: 'Maven Pro', sans-serif;
-    font-weight: 500;
-    font-size: 1rem;
-    margin-bottom: 0.3rem;
-  }
-
-  .community-pub-title a { color: #07121e; text-decoration: none; }
-  .community-pub-title a:hover { color: #2e85d1; }
-
-  .community-pub-meta {
-    font-size: 0.85rem;
-    color: #6c757d;
-    margin-bottom: 0.4rem;
-  }
-
-  .community-badge {
+  .badge-harvested {
     display: inline-block;
     background: rgba(244, 96, 65, 0.12);
     color: #c03a1e;
     border: 1px solid rgba(244, 96, 65, 0.3);
     border-radius: 0.3em;
-    padding: 0.15em 0.6em;
-    font-size: 0.72rem;
+    padding: 0.1em 0.55em;
+    font-size: 0.68rem;
     font-family: 'Maven Pro', sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.04em;
-    vertical-align: middle;
+    margin-right: 0.3em;
   }
 
-  .community-source-badge {
+  .badge-source {
     display: inline-block;
-    background: rgba(46, 133, 209, 0.1);
-    color: #1a5f9a;
-    border: 1px solid rgba(46, 133, 209, 0.25);
+    background: rgba(39, 140, 72, 0.08);
+    color: #1a6b38;
+    border: 1px solid rgba(39, 140, 72, 0.22);
     border-radius: 0.3em;
-    padding: 0.15em 0.6em;
-    font-size: 0.72rem;
+    padding: 0.1em 0.55em;
+    font-size: 0.68rem;
     font-family: 'Maven Pro', sans-serif;
-    vertical-align: middle;
+    letter-spacing: 0.02em;
+    margin-right: 0.3em;
   }
 </style>
-
-{% assign approved_pubs = site.data.approved %}
-{% if approved_pubs and approved_pubs.size > 0 %}
-<div id="community-publications" class="mt-5">
-  <h2 style="font-family:'Maven Pro',sans-serif;font-weight:700;color:#2D343A;font-size:1.5rem;margin-bottom:0.5rem;">
-    Harvested Publications
-  </h2>
-  <p class="text-muted mb-4" style="font-size:0.92rem;">
-    These publications were identified through automated harvesting (OpenAlex, SemanticScholar, CORE, OpenAIRE)
-    and approved by the Media Suite team. They are not yet in the Zotero group.
-    Entries already present in Zotero above are automatically hidden.
-    To move a publication to the main list, add it to the
-    <a href="https://www.zotero.org/groups/2288915/media_studies_clariah_wp5" target="_blank" rel="noopener">Zotero group</a>.
-  </p>
-
-  {% for pub in approved_pubs %}
-  <div class="community-pub-card"
-       data-doi="{{ pub.doi | downcase | strip }}"
-       id="cpub-{{ forloop.index }}">
-    <div class="community-pub-title">
-      {% if pub.doi and pub.doi != "" %}
-        <a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">{{ pub.title }}</a>
-      {% elsif pub.url and pub.url != "" %}
-        <a href="{{ pub.url }}" target="_blank" rel="noopener">{{ pub.title }}</a>
-      {% else %}
-        {{ pub.title }}
-      {% endif %}
-      &nbsp;<span class="community-badge">Harvested</span>
-    </div>
-    <div class="community-pub-meta">
-      {% if pub.authors and pub.authors != "" %}{{ pub.authors }}{% endif %}
-      {% if pub.year and pub.year != "" %}&nbsp;&middot;&nbsp;{{ pub.year }}{% endif %}
-      {% if pub.doi and pub.doi != "" %}&nbsp;&middot;&nbsp;<a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener" style="font-size:0.82rem;">doi:{{ pub.doi }}</a>{% endif %}
-    </div>
-    <div>
-      {% if pub.source and pub.source != "" %}
-        <span class="community-source-badge">{{ pub.source }}</span>
-      {% endif %}
-    </div>
-  </div>
-  {% endfor %}
-</div>
-{% endif %}
 
 ---
 
@@ -158,18 +105,17 @@ description: Academic publications related to CLARIAH Media Suite, sourced from 
   <li>
     <strong>Zotero (researcher-added).</strong>
     When a researcher adds a paper to the
-    <a href="https://www.zotero.org/groups/2288915/media_studies_clariah_wp5" target="_blank" rel="noopener">Media Studies CLARIAH WP5 Zotero group</a>,
-    it appears automatically in the main list above, labelled <em>Zotero</em>.
-    This is the single source of truth.
+    <a href="https://www.zotero.org/groups/2288915/media_studies_clariah_wp5" target="_blank" rel="noopener">Media Studies CLARIAH WP5 Zotero group</a>
+    it appears in the list above, labelled <span style="font-family:'Maven Pro',sans-serif;font-size:0.8rem;color:#1a6b38;border:1px solid rgba(39,140,72,0.3);border-radius:0.3em;padding:0.1em 0.4em;background:rgba(39,140,72,0.08);">ZOTERO</span>.
+    This is the single source of truth. To contribute, join the Zotero group and add your paper there.
   </li>
   <li>
     <strong>Harvested (team-curated).</strong>
     The Media Suite team periodically harvests candidate publications from OpenAlex, SemanticScholar, CORE and OpenAIRE,
     reviews them, and adds approved entries to <code>_data/approved.json</code> in this repository.
-    These appear in the <em>Harvested Publications</em> section with an orange left border,
-    labelled <em>Harvested</em> with the originating source.
-    Once a harvested paper is added to Zotero by its author it graduates to the main list
-    and disappears from the harvested section automatically.
+    These appear labelled <span style="font-family:'Maven Pro',sans-serif;font-size:0.8rem;color:#c03a1e;border:1px solid rgba(244,96,65,0.3);border-radius:0.3em;padding:0.1em 0.4em;background:rgba(244,96,65,0.1);">HARVESTED</span>
+    with a green badge showing the originating source.
+    Once a harvested paper is added to Zotero by its author it graduates automatically and the harvested entry is suppressed.
   </li>
 </ul>
 <p style="font-size:0.92rem;">
@@ -179,55 +125,12 @@ description: Academic publications related to CLARIAH Media Suite, sourced from 
 
 <script>
 (function () {
-  var bibContainer = document.getElementById('bibbase-container');
-  var communitySection = document.getElementById('community-publications');
+  var ZOTERO_GROUP = '2288915';
+  var HARVESTED = {{ site.data.approved | jsonify }};
 
-  /* ── LaTeX escape map ── */
-  var LATEX = {
-    '\\textbar': '|', '\\textless': '<', '\\textgreater': '>',
-    '\\textasciitilde': '~', '\\textasciicircum': '^',
-    '\\textbackslash': '\\', '\\textemdash': '—',
-    '\\textendash': '–', '\\textquotedbl': '"',
-    '\\textquoteleft': '‘', '\\textquoteright': '’',
-    '\\textquotedblleft': '“', '\\textquotedblright': '”'
-  };
-  var LATEX_RE = new RegExp(
-    Object.keys(LATEX).map(function (k) {
-      return k.replace(/\\/g, '\\\\');
-    }).join('|'), 'g'
-  );
+  /* ── Helpers ── */
 
-  function fixLatexInNode(node) {
-    if (node.nodeType === 3) {
-      var fixed = node.nodeValue.replace(LATEX_RE, function (m) { return LATEX[m] || m; });
-      if (fixed !== node.nodeValue) node.nodeValue = fixed;
-    } else {
-      node.childNodes.forEach(fixLatexInNode);
-    }
-  }
-
-  /* ── Zotero badge injection ── */
-  var badgedPapers = new WeakSet();
-  function injectZoteroBadges() {
-    if (!bibContainer) return;
-    bibContainer.querySelectorAll('.bibbase_paper').forEach(function (paper) {
-      if (badgedPapers.has(paper)) return;
-      badgedPapers.add(paper);
-      var titleEl = paper.querySelector('.bibbase_paper_title');
-      if (!titleEl) return;
-      var badge = document.createElement('span');
-      badge.className = 'zotero-badge';
-      badge.textContent = 'Zotero';
-      titleEl.appendChild(badge);
-    });
-  }
-
-  /* ── DOI deduplication (community vs Zotero) ── */
-  var cards = communitySection
-    ? Array.from(communitySection.querySelectorAll('.community-pub-card[data-doi]'))
-    : [];
-
-  function normaliseDoi(raw) {
+  function normDoi(raw) {
     if (!raw) return '';
     return raw.toLowerCase()
       .replace(/^https?:\/\/doi\.org\//i, '')
@@ -235,55 +138,218 @@ description: Academic publications related to CLARIAH Media Suite, sourced from 
       .trim();
   }
 
-  function collectBibbaseDois() {
-    var dois = new Set();
-    if (!bibContainer) return dois;
-    bibContainer.querySelectorAll('a[href*="doi.org"]').forEach(function (a) {
-      var d = normaliseDoi(a.getAttribute('href'));
-      if (d) dois.add(d);
-    });
-    bibContainer.querySelectorAll('.bibbase_paper').forEach(function (paper) {
-      var text = paper.textContent || '';
-      var matches = text.match(/10\.\d{4,}[^\s"<>]*/g);
-      if (matches) matches.forEach(function (m) { dois.add(normaliseDoi(m)); });
-    });
-    return dois;
+  function extractYear(dateStr) {
+    if (!dateStr) return '';
+    var m = dateStr.match(/\b(19|20)\d{2}\b/);
+    return m ? m[0] : '';
   }
 
-  function suppressDuplicates() {
-    if (!cards.length) return;
-    var bibDois = collectBibbaseDois();
-    if (!bibDois.size) return;
-    var hidden = 0;
-    cards.forEach(function (card) {
-      var doi = normaliseDoi(card.getAttribute('data-doi'));
-      if (doi && bibDois.has(doi)) { card.style.display = 'none'; hidden++; }
-    });
-    if (communitySection && hidden === cards.length) {
-      communitySection.style.display = 'none';
+  function formatAuthors(creators) {
+    if (!creators || !creators.length) return '';
+    return creators
+      .filter(function (c) { return c.creatorType === 'author'; })
+      .map(function (c) {
+        if (c.lastName && c.firstName) return c.lastName + ', ' + c.firstName;
+        if (c.lastName) return c.lastName;
+        return c.name || '';
+      })
+      .join('; ');
+  }
+
+  /* ── Fetch all Zotero items (handles pagination) ── */
+
+  function fetchZotero() {
+    var base = 'https://api.zotero.org/groups/' + ZOTERO_GROUP + '/items/top'
+             + '?format=json&limit=100&v=3';
+    var results = [];
+
+    function fetchPage(start) {
+      return fetch(base + '&start=' + start)
+        .then(function (r) { return r.json(); })
+        .then(function (batch) {
+          results = results.concat(batch);
+          if (batch.length === 100) return fetchPage(start + 100);
+          return results;
+        });
     }
+
+    return fetchPage(0);
   }
 
-  /* ── Single MutationObserver for all post-processing ── */
-  if (!bibContainer) return;
+  /* ── Normalise a Zotero item into our shared shape ── */
 
-  var settled;
-  var observer = new MutationObserver(function () {
-    clearTimeout(settled);
-    settled = setTimeout(function () {
-      fixLatexInNode(bibContainer);
-      injectZoteroBadges();
-      suppressDuplicates();
-    }, 400);
-  });
+  function normaliseZotero(item) {
+    var d = item.data || {};
+    return {
+      title:      d.title || '(no title)',
+      authors:    formatAuthors(d.creators),
+      year:       extractYear(d.date || ''),
+      doi:        normDoi(d.DOI || ''),
+      url:        d.url || '',
+      provenance: 'zotero',
+      source:     ''
+    };
+  }
 
-  observer.observe(bibContainer, { childList: true, subtree: true });
+  /* ── Normalise a harvested entry ── */
 
-  /* Safety fallback */
-  setTimeout(function () {
-    fixLatexInNode(bibContainer);
-    injectZoteroBadges();
-    suppressDuplicates();
-  }, 5000);
+  function normaliseHarvested(pub) {
+    return {
+      title:      pub.title || '(no title)',
+      authors:    pub.authors || '',
+      year:       pub.year || '',
+      doi:        normDoi(pub.doi || ''),
+      url:        pub.url || '',
+      provenance: 'harvested',
+      source:     pub.source || ''
+    };
+  }
+
+  /* ── Render one publication entry ── */
+
+  function renderEntry(pub) {
+    var div = document.createElement('div');
+    div.className = 'pub-entry';
+
+    /* Title */
+    var titleDiv = document.createElement('div');
+    titleDiv.className = 'pub-title';
+    var href = pub.doi ? 'https://doi.org/' + pub.doi : pub.url;
+    if (href) {
+      var a = document.createElement('a');
+      a.href = href;
+      a.target = '_blank';
+      a.rel = 'noopener';
+      a.textContent = pub.title;
+      titleDiv.appendChild(a);
+    } else {
+      titleDiv.textContent = pub.title;
+    }
+    div.appendChild(titleDiv);
+
+    /* Meta: authors · year · doi */
+    var parts = [];
+    if (pub.authors) parts.push(pub.authors);
+    if (pub.year)    parts.push(pub.year);
+    if (pub.doi) {
+      parts.push('<a href="https://doi.org/' + pub.doi + '" target="_blank" rel="noopener">doi:' + pub.doi + '</a>');
+    }
+    if (parts.length) {
+      var meta = document.createElement('div');
+      meta.className = 'pub-meta';
+      meta.innerHTML = parts.join(' &middot; ');
+      div.appendChild(meta);
+    }
+
+    /* Badges */
+    var badges = document.createElement('div');
+    badges.className = 'pub-badges';
+    if (pub.provenance === 'zotero') {
+      var b = document.createElement('span');
+      b.className = 'badge-zotero';
+      b.textContent = 'Zotero';
+      badges.appendChild(b);
+    } else {
+      var bh = document.createElement('span');
+      bh.className = 'badge-harvested';
+      bh.textContent = 'Harvested';
+      badges.appendChild(bh);
+      if (pub.source) {
+        var bs = document.createElement('span');
+        bs.className = 'badge-source';
+        bs.textContent = pub.source;
+        badges.appendChild(bs);
+      }
+    }
+    div.appendChild(badges);
+
+    return div;
+  }
+
+  /* ── Render the full list ── */
+
+  function render(items) {
+    var container = document.getElementById('publications-list');
+    var status    = document.getElementById('pub-status');
+    container.innerHTML = '';
+    if (status) status.textContent = '';
+
+    if (!items.length) {
+      container.innerHTML = '<p class="text-muted">No publications found.</p>';
+      return;
+    }
+
+    /* Group by year */
+    var byYear = {};
+    items.forEach(function (pub) {
+      var y = pub.year || 'Undated';
+      if (!byYear[y]) byYear[y] = [];
+      byYear[y].push(pub);
+    });
+
+    /* Sort years descending; put "Undated" last */
+    var years = Object.keys(byYear).sort(function (a, b) {
+      if (a === 'Undated') return 1;
+      if (b === 'Undated') return -1;
+      return parseInt(b) - parseInt(a);
+    });
+
+    years.forEach(function (year) {
+      var h = document.createElement('h3');
+      h.className = 'pub-year-heading';
+      h.textContent = year;
+      container.appendChild(h);
+
+      byYear[year].forEach(function (pub) {
+        container.appendChild(renderEntry(pub));
+      });
+    });
+  }
+
+  /* ── Bootstrap ── */
+
+  var status = document.getElementById('pub-status');
+
+  fetchZotero()
+    .then(function (zoteroRaw) {
+      var zoteroItems = zoteroRaw.map(normaliseZotero);
+
+      /* Build DOI set from Zotero for deduplication */
+      var zoteroDois = new Set();
+      zoteroItems.forEach(function (p) { if (p.doi) zoteroDois.add(p.doi); });
+
+      /* Harvested: skip entries whose DOI is already in Zotero */
+      var harvestedItems = HARVESTED
+        .map(normaliseHarvested)
+        .filter(function (p) { return !(p.doi && zoteroDois.has(p.doi)); });
+
+      var all = zoteroItems.concat(harvestedItems);
+
+      /* Sort: year desc, then title asc within year */
+      all.sort(function (a, b) {
+        var ya = parseInt(a.year) || 0;
+        var yb = parseInt(b.year) || 0;
+        if (yb !== ya) return yb - ya;
+        return a.title.localeCompare(b.title);
+      });
+
+      render(all);
+    })
+    .catch(function (err) {
+      console.error('Publications fetch failed:', err);
+      if (status) {
+        status.innerHTML = '<span class="text-danger">Could not load Zotero publications. '
+          + 'Showing harvested entries only.</span>';
+      }
+      /* Graceful fallback: show only harvested data */
+      var harvestedOnly = HARVESTED.map(normaliseHarvested);
+      harvestedOnly.sort(function (a, b) {
+        var ya = parseInt(a.year) || 0;
+        var yb = parseInt(b.year) || 0;
+        if (yb !== ya) return yb - ya;
+        return a.title.localeCompare(b.title);
+      });
+      render(harvestedOnly);
+    });
 })();
 </script>
