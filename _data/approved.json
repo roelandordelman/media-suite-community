@@ -1,0 +1,292 @@
+[
+  {
+    "source": "OpenAlex",
+    "tier": "T1-high",
+    "title": "From Text Mining to Visual Classification",
+    "year": 2018,
+    "doi": "10.18146/2213-7653.2018.370",
+    "authors": "‪Christian Gosvig Olesen, Ivan Kisjes",
+    "url": "https://doi.org/10.18146/2213-7653.2018.370",
+    "approved_at": "2026-04-25T09:56:33.535936"
+  },
+  {
+    "source": "OpenAlex",
+    "tier": "T1-high",
+    "title": "CLARIAH Media Suite Workshop: Zoeken en/in Metadata",
+    "year": 2026,
+    "doi": "10.5281/zenodo.18712837",
+    "authors": "Mary-Joy van der Deure",
+    "url": "https://doi.org/10.5281/zenodo.18712837",
+    "approved_at": "2026-04-25T09:56:37.931791"
+  },
+  {
+    "source": "OpenAlex",
+    "tier": "T1-high",
+    "title": "CLARIAH Media Suite Workshop: Automatic Speech Recognition (ASR)",
+    "year": 2020,
+    "doi": "10.5281/zenodo.18712971",
+    "authors": "Alexander Badenoch, Mary-Joy van der Deure, Jasmijn Van Gorp",
+    "url": "https://doi.org/10.5281/zenodo.18712971",
+    "approved_at": "2026-04-25T09:56:41.510981"
+  },
+  {
+    "source": "OpenAlex",
+    "tier": "T1-high",
+    "title": "Framing Industrial City Icons: Cross-Media Analysis of Post-War Urban Iconization with the CLARIAH Media Suite",
+    "year": 2023,
+    "doi": "10.5281/zenodo.7941649",
+    "authors": "Vincent Baptist",
+    "url": "https://doi.org/10.5281/zenodo.7941649",
+    "approved_at": "2026-04-25T09:56:45.701775"
+  },
+  {
+    "source": "OpenAlex",
+    "tier": "T1-high",
+    "title": "Digital Archives and Methods for Media Historiography",
+    "year": 2019,
+    "doi": "10.25969/mediarep/13736",
+    "authors": "Julia Noordegraaf",
+    "url": "https://doi.org/10.25969/mediarep/13736",
+    "approved_at": "2026-04-25T09:56:56.340268"
+  },
+  {
+    "source": "OpenAlex",
+    "tier": "T1-high",
+    "title": "LibGuides: Audiovisual Media Collection: Clariah Media Suite",
+    "year": 2014,
+    "doi": "",
+    "authors": "Jelga van der Zee",
+    "url": "https://openalex.org/W2996828105",
+    "approved_at": "2026-04-25T09:57:05.063588"
+  },
+  {
+    "source": "OpenAlex",
+    "tier": "T1-high",
+    "title": "CLARIAH Media Suite: as a Search &amp; Retrieval Practice for Professionals",
+    "year": 2023,
+    "doi": "",
+    "authors": "Maria Sygletou",
+    "url": "https://openalex.org/W7112844335",
+    "approved_at": "2026-04-25T09:57:10.240451"
+  },
+  {
+    "source": "OpenAlex",
+    "tier": "T1-high",
+    "title": "CLARIAH Media Suite: as a Search &amp; Retrieval Practices of Researchers",
+    "year": 2023,
+    "doi": "",
+    "authors": "Maria Sygletou",
+    "url": "https://openalex.org/W7113233578",
+    "approved_at": "2026-04-25T09:57:11.718170"
+  },
+  {
+    "source": "OpenAlex",
+    "tier": "T1-high",
+    "title": "Dossier",
+    "year": 2021,
+    "doi": "",
+    "authors": "Frank; id_orcid 0000-0003-1578-7582 Harbers, Marcel; id_orcid 0000-0002-7342-3472 Broersma",
+    "url": "https://openalex.org/W7150384504",
+    "approved_at": "2026-04-25T09:57:17.685861"
+  },
+  {
+    "source": "OpenAlex",
+    "tier": "T1-high",
+    "title": "MIMEHIST: Annotating Eye’s Jean Desmet Collection",
+    "year": 2021,
+    "doi": "10.18146/tmg.811",
+    "authors": "‪Christian Gosvig Olesen",
+    "url": "https://doi.org/10.18146/tmg.811",
+    "approved_at": "2026-04-25T09:57:21.202300"
+  },
+  {
+    "source": "OpenAlex",
+    "tier": "T1-high",
+    "title": "You've Been Framed - Partial Audio Matching Functionality to Support Framing Analysis",
+    "year": 2023,
+    "doi": "10.5281/zenodo.7951635",
+    "authors": "Philo van Kemenade, Rasa Bočytė, Johan Oomen",
+    "url": "https://doi.org/10.5281/zenodo.7951635",
+    "approved_at": "2026-04-25T09:57:30.385892"
+  },
+  {
+    "source": "OpenAlex",
+    "tier": "T2-medium",
+    "title": "Oral history: Stories at the museum around artworks. The challenges of sharing interview recordings in a FAIR way",
+    "year": 2024,
+    "doi": "10.5117/9789048567638/ahm.2024.002",
+    "authors": "S. Stigter, Jetze Touber",
+    "url": "https://doi.org/10.5117/9789048567638/ahm.2024.002",
+    "approved_at": "2026-04-25T09:57:33.005069"
+  },
+  {
+    "source": "OpenAlex",
+    "tier": "T2-medium",
+    "title": "Dutch Speaking to Dutch. Broadcasts from the Netherlands to Indonesia during the Decolonization War (1945–1949)",
+    "year": 2022,
+    "doi": "10.1080/19376529.2021.2023538",
+    "authors": "Vincent Kuitenbrouwer",
+    "url": "https://doi.org/10.1080/19376529.2021.2023538",
+    "approved_at": "2026-04-25T09:57:51.000805"
+  },
+  {
+    "source": "OpenAlex",
+    "tier": "T2-medium",
+    "title": "A Conversational Robot for Children’s Access to a Cultural Heritage Multimedia Archive",
+    "year": 2024,
+    "doi": "10.1007/978-3-031-56069-9_11",
+    "authors": "Thomas Beelen, Roeland Ordelman, Khiet P. Truong",
+    "url": "https://doi.org/10.1007/978-3-031-56069-9_11",
+    "approved_at": "2026-04-25T09:58:06.296219"
+  },
+  {
+    "source": "OpenAlex",
+    "tier": "T2-medium",
+    "title": "Old Stories and New Developments",
+    "year": 2018,
+    "doi": "10.18146/2213-0969.2018.jethc137",
+    "authors": "Alexander Badenoch, Jasmijn Van Gorp, Berber Hagedoorn",
+    "url": "https://doi.org/10.18146/2213-0969.2018.jethc137",
+    "approved_at": "2026-04-25T09:58:21.450609"
+  },
+  {
+    "source": "OpenAlex",
+    "tier": "T2-medium",
+    "title": "Computational cross-media research: tracing divergences between normative Dutch television and social media discourses on the ‘refugee crisis’ (2013-2018)",
+    "year": 2024,
+    "doi": "10.1177/13548565241258956",
+    "authors": "Emillie de Keulenaar, Thomas Poell, Anne Helmond",
+    "url": "https://doi.org/10.1177/13548565241258956",
+    "approved_at": "2026-04-25T09:58:27.985715"
+  },
+  {
+    "source": "OpenAlex",
+    "tier": "T2-medium",
+    "title": "Computational Approaches to Digitised Historical Newspapers (Dagstuhl Seminar 22292)",
+    "year": 2023,
+    "doi": "10.4230/dagrep.12.7.112",
+    "authors": "Maud Ehrmann, Marten Düring, Clemens Neudecker",
+    "url": "https://doi.org/10.4230/dagrep.12.7.112",
+    "approved_at": "2026-04-25T09:58:36.993941"
+  },
+  {
+    "source": "OpenAlex",
+    "tier": "T2-medium",
+    "title": "Facilitating Reusable Third-Party Annotations in Digital Editions",
+    "year": 2020,
+    "doi": "10.1515/9783110689112-009",
+    "authors": "Marijn Koolen, P. Boot",
+    "url": "https://doi.org/10.1515/9783110689112-009",
+    "approved_at": "2026-04-25T09:58:50.350895"
+  },
+  {
+    "source": "OpenAlex",
+    "tier": "T3-medium",
+    "title": "AVResearcher: Exploring Audiovisual Metadata",
+    "year": 2013,
+    "doi": "",
+    "authors": "Bouke Huurnink, Amit Bronner, Marc Bron",
+    "url": "https://openalex.org/W1496923836",
+    "approved_at": "2026-04-25T10:00:02.090488"
+  },
+  {
+    "source": "OpenAlex",
+    "tier": "T3-medium",
+    "title": "Looking for What You Are Looking for",
+    "year": 2013,
+    "doi": "10.18146/2213-0969.2013.jethc031",
+    "authors": "Jasmijn Van Gorp",
+    "url": "https://doi.org/10.18146/2213-0969.2013.jethc031",
+    "approved_at": "2026-04-25T10:00:36.749649"
+  },
+  {
+    "source": "OpenAlex",
+    "tier": "T3-medium",
+    "title": "The Climate Entanglements of Television Archives: The Materiality of Digital Preservation",
+    "year": 2025,
+    "doi": "10.24894/2296-6013.00164",
+    "authors": "Judith Keilbach, Mary-Joy van der Deure",
+    "url": "https://doi.org/10.24894/2296-6013.00164",
+    "approved_at": "2026-04-25T10:00:56.347944"
+  },
+  {
+    "source": "SemanticScholar",
+    "tier": "T1-high",
+    "title": "From Text Mining to Visual Classification: Rethinking Computational New Cinema History with Jean Desmet’s Digitised Business Archive",
+    "year": 2018,
+    "doi": "10.18146/TMG21370",
+    "authors": "C. Olesen, I. Kisjes",
+    "url": "https://www.semanticscholar.org/paper/c334733cddae7cc06d74ff7fba5768de4e8f0714",
+    "approved_at": "2026-04-25T10:02:11.955893"
+  },
+  {
+    "source": "SemanticScholar",
+    "tier": "T3-medium",
+    "title": "'AV in DH: How to publish AV research online'",
+    "year": 2014,
+    "doi": "",
+    "authors": "B. Hagedoorn, Willemien Sanders",
+    "url": "https://www.semanticscholar.org/paper/9cba68c25ad916954ef90ecdb91c1899da8d0247",
+    "approved_at": "2026-04-25T10:03:26.428468"
+  },
+  {
+    "source": "OpenAIRE",
+    "tier": "T1-high",
+    "title": "CLARIAH Media Suite: from 2014 to 2024  in a series of short stories",
+    "year": "2024",
+    "doi": "10.5281/zenodo.12517693",
+    "authors": "Ordelman, Roeland, Noordegraaf, Julia, Van Gorp, Jasmijn",
+    "url": "",
+    "approved_at": "2026-04-25T10:04:13.288580"
+  },
+  {
+    "source": "OpenAIRE",
+    "tier": "T1-high",
+    "title": "Website and educational materials, CLARIAH Teaching Fellowship project \"Making Multimodal Storytelling Experiences with Cultural Heritage Materials in the International Classroom\"",
+    "year": "2023",
+    "doi": "",
+    "authors": "Hagedoorn, Berber",
+    "url": "",
+    "approved_at": "2026-04-25T10:04:22.518295"
+  },
+  {
+    "source": "OpenAIRE",
+    "tier": "T1-high",
+    "title": "Tutorial: Identifying 'flow' in linear television programming with digitised newspapers and the Media Suite",
+    "year": "2024",
+    "doi": "",
+    "authors": "van der Deure, Mary-Joy, van Gorp, Jasmijn",
+    "url": "",
+    "approved_at": "2026-04-25T10:04:27.100402"
+  },
+  {
+    "source": "OpenAIRE",
+    "tier": "T2-medium",
+    "title": "Exploring New Dimensions of Archives: Finding Audiovisually Similar Programmes with the Help of Neural Networks",
+    "year": "2024",
+    "doi": "10.25969/mediarep/24075",
+    "authors": "Veldhoen, Sara, Klein, Rana, Wigham, Mari",
+    "url": "",
+    "approved_at": "2026-04-25T10:04:32.759824"
+  },
+  {
+    "source": "OpenAIRE",
+    "tier": "T2-medium",
+    "title": "CrossEWT: Cross-Medial Analysis of World War II Eyewitness Testimonies",
+    "year": "2021",
+    "doi": "10.18146/tmg.810",
+    "authors": "Hogervorst, Susan",
+    "url": "",
+    "approved_at": "2026-04-25T10:04:50.542423"
+  },
+  {
+    "source": "OpenAIRE",
+    "tier": "T2-medium",
+    "title": "Putting together the wartime propaganda puzzle",
+    "year": "2024",
+    "doi": "10.5281/zenodo.11444743",
+    "authors": "Wigham, Mari, Ordelman, Roeland, Klein, Rana",
+    "url": "",
+    "approved_at": "2026-04-25T10:04:53.808758"
+  }
+]
