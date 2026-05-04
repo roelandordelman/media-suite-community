@@ -38,6 +38,10 @@
             href="{{ '/sane/' | relative_url }}">SANE</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link{% if page.url contains '/ask' %} active{% endif %}"
+            href="{{ '/ask/' | relative_url }}">Ask</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link{% if page.url contains '/about' %} active{% endif %}"
             href="{{ '/about/' | relative_url }}">About</a>
         </li>

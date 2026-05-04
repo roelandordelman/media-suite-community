@@ -1,0 +1,52 @@
+---
+layout: ask
+title: Ask the Media Suite
+permalink: /ask/
+---
+
+<div id="ask-app" data-api-url="{{ site.ask_api_url | default: '' }}">
+
+  <div id="ask-thread-wrapper">
+    <div id="ask-thread" role="log" aria-live="polite" aria-label="Conversation">
+
+      <div class="ask-empty-state" id="ask-empty">
+        <div class="ask-empty-icon">
+          <i class="bi bi-chat-dots-fill"></i>
+        </div>
+        <h2>Ask the Media Suite</h2>
+        <p>Ask questions about the Media Suite in natural language.<br>
+          Answers are grounded in official documentation with source links.</p>
+        <p class="ask-example-label">Try asking:</p>
+        <ul class="list-unstyled ask-example-list">
+          <li><button class="ask-example-btn" type="button">How do I search for audio-visual material?</button></li>
+          <li><button class="ask-example-btn" type="button">What collections are available in the Media Suite?</button></li>
+          <li><button class="ask-example-btn" type="button">How does the annotation tool work?</button></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="ask-input-bar">
+    <div class="container-xl">
+      <div class="d-flex gap-2 align-items-end">
+        <textarea id="ask-input"
+          class="form-control ask-textarea"
+          placeholder="Ask a question about the Media Suite…"
+          rows="2"
+          aria-label="Your question"></textarea>
+        <button id="ask-send" class="btn btn-primary flex-shrink-0 ask-send-btn">
+          <i class="bi bi-send-fill"></i>
+          <span class="d-none d-sm-inline ms-1">Send</span>
+        </button>
+      </div>
+      <div class="d-flex justify-content-between align-items-center mt-2">
+        <button id="ask-clear" class="btn btn-sm btn-outline-secondary" style="visibility: hidden;">
+          <i class="bi bi-arrow-counterclockwise"></i> Clear conversation
+        </button>
+        <span class="ask-disclaimer">Answers are AI-generated and may contain errors.</span>
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -1,12 +1,12 @@
 title: Media Suite Community
 description: A hub for researchers, developers, and enthusiasts around the CLARIAH Media Suite.
 baseurl: "/media-suite-community"
-url: "https://roelandordelman.github.io"  # update with your GitHub username
+url: "https://roelandordelman.github.io" # update with your GitHub username
 
 # Build settings
 markdown: kramdown
 permalink: /news/:year/:month/:day/:title/
-future: true  # publish future-dated events
+future: true # publish future-dated events
 
 # Plugins
 plugins:
@@ -45,6 +45,9 @@ defaults:
       type: "sane-collections"
     values:
       layout: "sane-collection"
+
+# Ask page — set to your API endpoint base URL (e.g. https://api.example.com)
+ask_api_url: "http://localhost:8000"
 
 # Exclude from build
 exclude:
