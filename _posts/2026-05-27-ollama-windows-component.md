@@ -1,13 +1,14 @@
 ---
 layout: post
-title: "New Research Cloud Component: ollama-windows"
+title: "SANE projects can run local AI now"
 date: 2026-05-27
 excerpt: "A new Research Cloud Component for Windows workspaces makes it easy to run local AI models system-wide — ideal for workshops, teaching environments, and SANE research use cases."
 ---
 
-A new Research Cloud Component for Windows workspaces is now available: **ollama-windows**.
+From the SURF Research Cloud team: 
+A new Research Cloud Component for Windows workspaces is now available: **[ollama-windows](https://gitlab.com/rsc-surf-nl/plugins/ollama-windows)**.
 
-The component installs [Ollama](https://ollama.com/) system-wide and can automatically pull one or more specified models during deployment. Models are shared across all users on the machine, making it easier to prepare AI-enabled workspaces for workshops, teaching environments, and research use cases. For SANE projects it enables running local AI models without an internet connection.
+The component installs [Ollama](https://ollama.com/) system-wide and can automatically pull one or more specified models during deployment. Models are shared across all users on the machine, making it easier to prepare AI-enabled workspaces for workshops, teaching environments, and research use cases. **For SANE projects it enables running local AI models without an internet connection**.
 
 ## Features
 
